@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearanceOverlay.Esau.CircleImageView" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Widget.Esau.CircularProgressIndicator" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="indicatorSize">32dp</item>
+        <item name="indicatorColor">@android:color/white</item>
+        <item name="trackColor">@color/transparent_30</item>
+    </style>
+</resources>
