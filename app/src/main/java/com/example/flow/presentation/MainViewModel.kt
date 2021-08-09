@@ -8,6 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.flow.domain.usecases.GetUsersUseCase
 import com.example.flow.models.UserEntity
 import com.example.flow.utils.DataState
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
@@ -21,6 +22,7 @@ class MainViewModel
     val userDataState: LiveData<DataState<List<UserEntity>, String>>
         get() = _userDataState
 
+    @ExperimentalCoroutinesApi
     fun getUsers(){
         viewModelScope.launch {
             getUsersUseCase.getUsers()
